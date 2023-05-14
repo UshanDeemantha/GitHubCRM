@@ -1,0 +1,65 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SessionTimeout.aspx.cs" Inherits="HRM.EmployeePortal.SessionTimeout" MasterPageFile="~/EmptyTemplateMasterPage.master" %>
+
+<%@ Register Assembly="DevExpress.Web.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style1 {
+            width: 250px;
+            height: 20px;
+            font-family:Arial;
+        }
+
+        .auto-style2 {
+            height: 20px;
+        }
+
+        .newFont {
+            font-family: Tahoma;
+            font-size: 15px;
+        }
+
+</style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
+   <%-- <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>--%>
+       
+    <table style="width:100%;">
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width:150px; margin-left:10px;">
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/App_Themes/Timeout.png" />
+            </td>
+            <td style="font-size:16px;">
+               User is no longer logged-in OR user session has expired.&nbsp;
+                <dx:ASPxButton ID="btnLoginNow" runat="server" Text="Login now" OnClick="btnLoginNow_Click" Theme="iOS"></dx:ASPxButton>
+                &nbsp;&nbsp;To continue working OR close the browser\tab to exit from CRM system completely.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td align="right">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+    </table>
+</asp:Content>
+
